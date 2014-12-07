@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0078)http://127.0.0.1:8000/Tossug_Big_O.slides.html?theme=beige&transition=slide#/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <title>Tossug_Big_O slides</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="./Tossug_Big_O slides_files/require.min.js"></script>
+<script src="./Tossug_Big_O slides_files/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="http://127.0.0.1:8000/reveal.js/css/reveal.css">
+<link rel="stylesheet" href="http://127.0.0.1:8000/reveal.js/css/theme/beige.css" id="theme">
 
 <!-- For syntax highlighting -->
-<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+<link rel="stylesheet" href="http://127.0.0.1:8000/reveal.js/lib/css/zenburn.css">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -38,7 +37,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 <![endif]-->
 
 <!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
 
 <style type="text/css">
     .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
@@ -1710,15 +1709,61 @@ div.output_prompt {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="http://127.0.0.1:8000/custom.css">
 
-</head>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 0; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
 
-<body>
-<div class="reveal">
-<div class="slides">
-<section>
-    <section>
+<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+<div class="reveal slide center" data-transition-speed="default" data-background-transition="default">
+<div class="slides" style="width: 960px; height: 700px; zoom: 0.776571428571429;">
+<section hidden="" class="stack past" style="top: 0px; display: block;">
+    <section style="top: -209.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1726,8 +1771,19 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="what-is-big-o-">What is Big-O?</h1>
+<p>Big-O is a terminology used in analysis of algorithm. <br>
+But what is an algorithm anyway?<br></p>
+</div>
+</div>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>By wiki, an algorithm is a step-by-step procedure for calculations. <br>
-We expect such an algorithm will give us the &quot;correct&quot; result we&#39;re interested in. <br> 
+We expect such an algorithm will give us the "correct" result we're interested in. <br> 
 Hence, for any kind of algorithm, we care about mainly on two things:</p>
 <ul>
 <li>Accuracy</li>
@@ -1735,20 +1791,20 @@ Hence, for any kind of algorithm, we care about mainly on two things:</p>
 </ul>
 </div>
 </div>
-</div></section><section>
+</div>
+    </div></section><section class="future" style="top: -209.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What we don&#39;t like:
-,</p>
+<h3 id="what-we-don-t-like-">What we don't like:</h3>
 <ul>
-<li>An algorithm that gives you a <font color='red'>wrong</font> answer.</li>
-<li>An algorithm that takes <font color='red'>too long</font> to finish.</li>
+<li>An algorithm that gives you a <font color="red">wrong</font> answer.</li>
+<li>An algorithm that takes <font color="red">too long to finish</font>.</li>
 </ul>
-<p>But, what does it mean by <code>taking too long to finish</code>? That is where Big-O steps in. <br></p>
+<p>Wait! what does it mean by <code>too long to finish</code>? That is where Big-O steps in. <br></p>
 <p>In order to give a estimation independent to the device or computer you have, we estimate the time for a algorithm to finish in the term of the number of operation it required. <br></p>
 <ul>
 <li>Including only basic unit of computation. Such as plus(+), minus(-), logical and, ...etc</li>
@@ -1756,7 +1812,7 @@ Hence, for any kind of algorithm, we care about mainly on two things:</p>
 </ul>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" style="top: -219.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1764,18 +1820,18 @@ Hence, for any kind of algorithm, we care about mainly on two things:</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="definition-for-big-o">Definition for Big-O</h2>
-<p><font size='3'><u><strong>Definition:</strong></u></font><br></p>
+<p><font size="3"><u><strong>Definition:</strong></u></font><br></p>
 <p>
-Let $f(x)$ and $g(x)$ be two functions defined on $\mathbb{R}$ (real number), <br>
-one write: $$f(x) \sim \mathcal{O}(g(x))$$
+Let <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-1" style="width: 1.892em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.605em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.837em -0.532em); top: -2.505em; left: 0.002em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: STIXGeneral-Italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.166em;"></span></span><span class="mo" id="MathJax-Span-4" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-5" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.156em; vertical-align: -0.286em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">f(x)</script> and <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-2-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-7" style="width: 1.933em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.646em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.837em -0.368em); top: -2.505em; left: 0.002em;"><span class="mrow" id="MathJax-Span-8"><span class="mi" id="MathJax-Span-9" style="font-family: STIXGeneral-Italic;">g</span><span class="mo" id="MathJax-Span-10" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-11" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-12" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.108em; vertical-align: -0.286em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2">g(x)</script> be two functions defined on <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-13" style="width: 0.947em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.783em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.632em -0.286em); top: -2.505em; left: 0.002em;"><span class="mrow" id="MathJax-Span-14"><span class="texatom" id="MathJax-Span-15"><span class="mrow" id="MathJax-Span-16"><span class="mi" id="MathJax-Span-17" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.868em; vertical-align: -0.046em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">\mathbb{R}</script> (real number), <br>
+one write: <span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-4-Frame"><nobr><span class="math" id="MathJax-Span-18" style="width: 6.946em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.919em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(2.18em 1000.002em 3.289em -0.532em); top: -2.957em; left: 0.002em;"><span class="mrow" id="MathJax-Span-19"><span class="mi" id="MathJax-Span-20" style="font-family: STIXGeneral-Italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.166em;"></span></span><span class="mo" id="MathJax-Span-21" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-22" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-23" style="font-family: STIXGeneral-Regular;">)</span><span class="mo" id="MathJax-Span-24" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">∼</span><span class="texatom" id="MathJax-Span-25" style="padding-left: 0.331em;"><span class="mrow" id="MathJax-Span-26"><span class="mi" id="MathJax-Span-27" style="font-family: STIXNonUnicode-Italic;"></span></span></span><span class="mo" id="MathJax-Span-28" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-29" style="font-family: STIXGeneral-Italic;">g</span><span class="mo" id="MathJax-Span-30" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-31" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-32" style="font-family: STIXGeneral-Regular;">)</span><span class="mo" id="MathJax-Span-33" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.961em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.156em; vertical-align: -0.286em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-4">f(x) \sim \mathcal{O}(g(x))</script>
   <br>
-if and only if there exists on positive number $\mathcal{M}$ in $\mathbb{R}$ such that:<br>
+if and only if there exists on positive number <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-5-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-34" style="width: 1.44em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.235em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(2.18em 1000.002em 3.125em -0.327em); top: -2.957em; left: 0.002em;"><span class="mrow" id="MathJax-Span-35"><span class="texatom" id="MathJax-Span-36"><span class="mrow" id="MathJax-Span-37"><span class="mi" id="MathJax-Span-38" style="font-family: STIXNonUnicode-Italic;"></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.961em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.916em; vertical-align: -0.094em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-5">\mathcal{M}</script> in <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-6-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-39" style="width: 0.947em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.783em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.632em -0.286em); top: -2.505em; left: 0.002em;"><span class="mrow" id="MathJax-Span-40"><span class="texatom" id="MathJax-Span-41"><span class="mrow" id="MathJax-Span-42"><span class="mi" id="MathJax-Span-43" style="font-family: STIXGeneral-Regular;">ℝ</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.868em; vertical-align: -0.046em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-6">\mathbb{R}</script> such that:<br>
   <br>
-$$\lim_{x \rightarrow \infty} \frac{f(x)}{g(x)} \leq \mathcal{M}$$
+<span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-7-Frame"><nobr><span class="math" id="MathJax-Span-44" style="width: 7.481em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.371em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.481em 1000.002em 3.988em -0.368em); top: -2.957em; left: 0.002em;"><span class="mrow" id="MathJax-Span-45"><span class="munderover" id="MathJax-Span-46"><span style="display: inline-block; position: relative; width: 1.646em; height: 0px;"><span style="position: absolute; clip: rect(1.687em 1000.002em 2.632em -0.368em); top: -2.505em; left: 0.125em;"><span class="mo" id="MathJax-Span-47" style="font-family: STIXGeneral-Regular;">lim</span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; clip: rect(1.851em 1000.002em 2.55em -0.368em); top: -1.642em; left: 0.002em;"><span class="texatom" id="MathJax-Span-48"><span class="mrow" id="MathJax-Span-49"><span class="mi" id="MathJax-Span-50" style="font-size: 70.7%; font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-51" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">→</span><span class="mi" id="MathJax-Span-52" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">∞</span></span></span><span style="display: inline-block; width: 0px; height: 2.303em;"></span></span></span></span><span class="mfrac" id="MathJax-Span-53" style="padding-left: 0.208em;"><span style="display: inline-block; position: relative; width: 1.769em; height: 0px; margin-right: 0.125em; margin-left: 0.125em;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.837em -0.532em); top: -3.162em; left: 50%; margin-left: -0.779em;"><span class="mrow" id="MathJax-Span-54"><span class="mi" id="MathJax-Span-55" style="font-family: STIXGeneral-Italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.166em;"></span></span><span class="mo" id="MathJax-Span-56" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-57" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-58" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; clip: rect(1.728em 1000.002em 2.837em -0.368em); top: -1.806em; left: 50%; margin-left: -0.82em;"><span class="mrow" id="MathJax-Span-59"><span class="mi" id="MathJax-Span-60" style="font-family: STIXGeneral-Italic;">g</span><span class="mo" id="MathJax-Span-61" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-62" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-63" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; clip: rect(0.906em 1000.002em 1.194em -0.368em); top: -1.272em; left: 0.002em;"><span style="border-left-width: 1.769em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.043em; vertical-align: 0.002em;"></span><span style="display: inline-block; width: 0px; height: 1.07em;"></span></span></span></span><span class="mo" id="MathJax-Span-64" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">≤</span><span class="texatom" id="MathJax-Span-65" style="padding-left: 0.331em;"><span class="mrow" id="MathJax-Span-66"><span class="mi" id="MathJax-Span-67" style="font-family: STIXNonUnicode-Italic;"></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.961em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 2.743em; vertical-align: -1.103em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-7">\lim_{x \rightarrow \infty} \frac{f(x)}{g(x)} \leq \mathcal{M}</script>
 </p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" style="top: -215px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1783,8 +1839,8 @@ $$\lim_{x \rightarrow \infty} \frac{f(x)}{g(x)} \leq \mathcal{M}$$
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>[Example]</em>: <br>
-$$f(x)= 6x^3 + \frac{1}{x^2} \sim \mathcal{O}(x^3)$$</p>
-<p><strong>Note:</strong> It is also correct to write: $$f(x) \sim \mathcal{O}(x^6)$$.</p>
+<span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-8-Frame"><nobr><span class="math" id="MathJax-Span-68" style="width: 12.412em; display: inline-block;"><span style="display: inline-block; position: relative; width: 10.604em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.481em 1000.002em 3.824em -0.532em); top: -2.957em; left: 0.002em;"><span class="mrow" id="MathJax-Span-69"><span class="mi" id="MathJax-Span-70" style="font-family: STIXGeneral-Italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.166em;"></span></span><span class="mo" id="MathJax-Span-71" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-72" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-73" style="font-family: STIXGeneral-Regular;">)</span><span class="mo" id="MathJax-Span-74" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">=</span><span class="mn" id="MathJax-Span-75" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">6</span><span class="msubsup" id="MathJax-Span-76"><span style="display: inline-block; position: relative; width: 0.988em; height: 0px;"><span style="position: absolute; clip: rect(1.933em 1000.002em 2.632em -0.409em); top: -2.505em; left: 0.002em;"><span class="mi" id="MathJax-Span-77" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; top: -2.71em; left: 0.536em;"><span class="mn" id="MathJax-Span-78" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">3</span><span style="display: inline-block; width: 0px; height: 2.303em;"></span></span></span></span><span class="mo" id="MathJax-Span-79" style="font-family: STIXGeneral-Regular; padding-left: 0.249em;">+</span><span class="mfrac" id="MathJax-Span-80" style="padding-left: 0.249em;"><span style="display: inline-block; position: relative; width: 1.112em; height: 0px; margin-right: 0.125em; margin-left: 0.125em;"><span style="position: absolute; clip: rect(1.728em 1000.002em 2.632em -0.244em); top: -3.162em; left: 50%; margin-left: -0.244em;"><span class="mn" id="MathJax-Span-81" style="font-family: STIXGeneral-Regular;">1</span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; clip: rect(3.084em 1000.002em 4.111em -0.409em); top: -3.285em; left: 50%; margin-left: -0.491em;"><span class="msubsup" id="MathJax-Span-82"><span style="display: inline-block; position: relative; width: 0.988em; height: 0px;"><span style="position: absolute; clip: rect(1.933em 1000.002em 2.632em -0.409em); top: -2.505em; left: 0.002em;"><span class="mi" id="MathJax-Span-83" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; top: -2.587em; left: 0.536em;"><span class="mn" id="MathJax-Span-84" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">2</span><span style="display: inline-block; width: 0px; height: 2.303em;"></span></span></span></span><span style="display: inline-block; width: 0px; height: 3.988em;"></span></span><span style="position: absolute; clip: rect(0.906em 1000.002em 1.194em -0.368em); top: -1.272em; left: 0.002em;"><span style="border-left-width: 1.112em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.043em; vertical-align: 0.002em;"></span><span style="display: inline-block; width: 0px; height: 1.07em;"></span></span></span></span><span class="mo" id="MathJax-Span-85" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">∼</span><span class="texatom" id="MathJax-Span-86" style="padding-left: 0.331em;"><span class="mrow" id="MathJax-Span-87"><span class="mi" id="MathJax-Span-88" style="font-family: STIXNonUnicode-Italic;"></span></span></span><span class="mo" id="MathJax-Span-89" style="font-family: STIXGeneral-Regular;">(</span><span class="msubsup" id="MathJax-Span-90"><span style="display: inline-block; position: relative; width: 0.988em; height: 0px;"><span style="position: absolute; clip: rect(1.933em 1000.002em 2.632em -0.409em); top: -2.505em; left: 0.002em;"><span class="mi" id="MathJax-Span-91" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; top: -2.71em; left: 0.536em;"><span class="mn" id="MathJax-Span-92" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">3</span><span style="display: inline-block; width: 0px; height: 2.303em;"></span></span></span></span><span class="mo" id="MathJax-Span-93" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.961em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 2.502em; vertical-align: -0.911em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-8">f(x)= 6x^3 + \frac{1}{x^2} \sim \mathcal{O}(x^3)</script></p>
+<p><strong>Note:</strong> It is also correct to write: <span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-9-Frame"><nobr><span class="math" id="MathJax-Span-94" style="width: 6.207em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.303em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.933em 1000.002em 3.289em -0.532em); top: -2.957em; left: 0.002em;"><span class="mrow" id="MathJax-Span-95"><span class="mi" id="MathJax-Span-96" style="font-family: STIXGeneral-Italic;">f<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.166em;"></span></span><span class="mo" id="MathJax-Span-97" style="font-family: STIXGeneral-Regular;">(</span><span class="mi" id="MathJax-Span-98" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span class="mo" id="MathJax-Span-99" style="font-family: STIXGeneral-Regular;">)</span><span class="mo" id="MathJax-Span-100" style="font-family: STIXGeneral-Regular; padding-left: 0.331em;">∼</span><span class="texatom" id="MathJax-Span-101" style="padding-left: 0.331em;"><span class="mrow" id="MathJax-Span-102"><span class="mi" id="MathJax-Span-103" style="font-family: STIXNonUnicode-Italic;"></span></span></span><span class="mo" id="MathJax-Span-104" style="font-family: STIXGeneral-Regular;">(</span><span class="msubsup" id="MathJax-Span-105"><span style="display: inline-block; position: relative; width: 0.988em; height: 0px;"><span style="position: absolute; clip: rect(1.933em 1000.002em 2.632em -0.409em); top: -2.505em; left: 0.002em;"><span class="mi" id="MathJax-Span-106" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span><span style="display: inline-block; width: 0px; height: 2.509em;"></span></span><span style="position: absolute; top: -2.71em; left: 0.536em;"><span class="mn" id="MathJax-Span-107" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">6</span><span style="display: inline-block; width: 0px; height: 2.303em;"></span></span></span></span><span class="mo" id="MathJax-Span-108" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 2.961em;"></span></span></span><span style="border-left-width: 0.002em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.397em; vertical-align: -0.286em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-9">f(x) \sim \mathcal{O}(x^6)</script></p>
 <p>Basically speaking, they are two common type of algorithm:</p>
 <ul>
 <li>Brutal Force Algorithm &lt;-- Typically SLOW, but easy to check the accuracy.</li>
@@ -1793,7 +1849,7 @@ $$f(x)= 6x^3 + \frac{1}{x^2} \sim \mathcal{O}(x^3)$$</p>
 <p>Here I am going to use sorting problem as example.</p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1805,6 +1861,31 @@ $$f(x)= 6x^3 + \frac{1}{x^2} \sim \mathcal{O}(x^3)$$</p>
 </div>
 </div><div class="fragment">
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="the-pseudo-code-for-brutal-sort">The Pseudo Code for Brutal Sort</h3>
+<p><strong>brutal_sort(A)</strong><br>
+<strong>Input: an array of length n</strong> <br>
+<strong>Output: an sorted array. (large --&gt; small)</strong> <br></p>
+<ol>
+<li><strong>result &lt;- []</strong> <br></li>
+<li><strong>for k in 1 to n</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;tmp &lt;- A[0]</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;for j in 1 to length of A</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;if A[j] &gt; tmp</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;tmp &lt;- A[j]</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;result[k] &lt;- tmp</strong> <br></li>
+<li><strong>&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;remove(A, tmp)</strong> <br></li>
+<li><strong>return result</strong> <br></li>
+</ol>
+</div>
+</div>
+</div>
+    </div></section><section class="future" style="top: -20px; display: none;">
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -1813,9 +1894,9 @@ In&nbsp;[1]:
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">brutal_sort</span><span class="p">(</span><span class="n">to_sort</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+    <span class="sd">"""</span>
 <span class="sd">    Always find the largest element and the update the array to be returned</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">to_sort</span><span class="p">)):</span>
         <span class="n">tmp</span> <span class="o">=</span> <span class="n">to_sort</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -1831,8 +1912,7 @@ In&nbsp;[1]:
 </div>
 </div>
 
-</div>
-    </div></section><section>
+</div></section><section class="future" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1854,7 +1934,7 @@ In&nbsp;[2]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[4]:
+In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1871,9 +1951,8 @@ In&nbsp;[4]:
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-CPU times: user 4.65 s, sys: 45.1 ms, total: 4.7 s
-Wall time: 4.72 s
+<pre>CPU times: user 4.64 s, sys: 24.8 ms, total: 4.66 s
+Wall time: 4.71 s
 
 </pre>
 </div>
@@ -1883,7 +1962,7 @@ Wall time: 4.72 s
 </div>
 
 </div>
-    </div></section><section>
+    </div></section><section class="future" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1892,25 +1971,25 @@ Wall time: 4.72 s
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="pop-quiz">Pop Quiz</h2>
 <p>  <br></p>
-<font color='green' size='4'> What is the Big-O for this brutal_sort? </font>
+<font color="green" size="4"> What is the Big-O for this brutal_sort? </font>
 
 <p><strong>Note: Here we only consider an array with distinct values.</strong></p>
 <p><strong>Note2: How about array with duplicate values?</strong></p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$$\mbox{# of operations for brutal_sort} \sim \mathcal{O}(n^2)$$</p>
+<p><span class="MathJax_Preview"></span><div class="MathJax_Display" role="textbox" aria-readonly="true" style="text-align: center;"><span class="MathJax" id="MathJax-Element-10-Frame"><nobr><span class="math" id="MathJax-Span-109" style="width: 18.849em; display: inline-block;"><span style="display: inline-block; position: relative; width: 15.708em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.99em 1000.003em 3.465em -0.574em); top: -3.074em; left: 0.003em;"><span class="mrow" id="MathJax-Span-110"><span class="mtext" id="MathJax-Span-111" style="font-family: STIXGeneral-Regular;"># of operations for brutal_sort</span><span class="mo" id="MathJax-Span-112" style="font-family: STIXGeneral-Regular; padding-left: 0.324em;">∼</span><span class="texatom" id="MathJax-Span-113" style="padding-left: 0.324em;"><span class="mrow" id="MathJax-Span-114"><span class="mi" id="MathJax-Span-115" style="font-family: STIXNonUnicode-Italic;"></span></span></span><span class="mo" id="MathJax-Span-116" style="font-family: STIXGeneral-Regular;">(</span><span class="msubsup" id="MathJax-Span-117"><span style="display: inline-block; position: relative; width: 0.965em; height: 0px;"><span style="position: absolute; clip: rect(1.862em 1000.003em 2.696em -0.574em); top: -2.497em; left: 0.003em;"><span class="mi" id="MathJax-Span-118" style="font-family: STIXGeneral-Italic;">n</span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span><span style="position: absolute; top: -2.689em; left: 0.516em;"><span class="mn" id="MathJax-Span-119" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">2</span><span style="display: inline-block; width: 0px; height: 2.311em;"></span></span></span></span><span class="mo" id="MathJax-Span-120" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 3.08em;"></span></span></span><span style="border-left-width: 0.004em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.465em; vertical-align: -0.304em;"></span></span></nobr></span></div><script type="math/tex; mode=display" id="MathJax-Element-10">\mbox{# of operations for brutal_sort} \sim \mathcal{O}(n^2)</script></p>
 </div>
 </div>
 </div></section>
-    </section><section>
-    <section>
+    </section><section class="stack present" style="top: 0px; display: block;" data-previous-indexv="0">
+    <section class="present" style="top: -82px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1920,7 +1999,7 @@ Wall time: 4.72 s
 <h1 id="merge-sort">Merge Sort</h1>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -350px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1929,20 +2008,20 @@ Wall time: 4.72 s
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="the-pseudo-code-for-merge-sort-is-as-following-">The pseudo code for merge sort is as following:</h2>
 <p>  <br>
-<img src="merge_sort1.png" alt=""></p>
+<img src="./Tossug_Big_O slides_files/merge_sort1.png" alt=""></p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -303.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="merge_sort2.png" alt=""></p>
+<p><img src="./Tossug_Big_O slides_files/merge_sort2.png" alt=""></p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -78px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1952,17 +2031,17 @@ Wall time: 4.72 s
 <h2 id="the-implementation">The Implementation</h2>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[5]:
+In&nbsp;[4]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">to_sort</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Merge Sort&quot;&quot;&quot;</span>
+    <span class="sd">"""Merge Sort"""</span>
     <span class="c"># if the array is of the base case, return it.</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">to_sort</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">to_sort</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">to_sort</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
@@ -1999,12 +2078,12 @@ In&nbsp;[5]:
 </div>
 </div>
 
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[11]:
+In&nbsp;[5]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2020,7 +2099,7 @@ In&nbsp;[11]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[12]:
+In&nbsp;[6]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2037,9 +2116,8 @@ In&nbsp;[12]:
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-CPU times: user 75.2 ms, sys: 5.1 ms, total: 80.3 ms
-Wall time: 77.3 ms
+<pre>CPU times: user 86.2 ms, sys: 9.16 ms, total: 95.3 ms
+Wall time: 88.6 ms
 
 </pre>
 </div>
@@ -2050,8 +2128,8 @@ Wall time: 77.3 ms
 
 </div>
     </div></section>
-    </section><section>
-    <section>
+    </section><section class="stack future" style="top: 0px; display: block;" data-previous-indexv="0" hidden="">
+    <section class="" style="top: -152.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2062,10 +2140,11 @@ Wall time: 77.3 ms
 <h2 id="big-o-for-merge-sort">Big-O for Merge Sort</h2>
 <ul>
 <li>What is the big-O for merge sort?</li>
+<li>You can find it by hand or by experiment!</li>
 </ul>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -317.5px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2073,10 +2152,103 @@ Wall time: 77.3 ms
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="pseudo-code-bfs-algorithm">Pseudo Code - BFS Algorithm</h2>
-<p><img src="BFS_Distance.png" alt="Pseudo Code"></p>
+<p><img src="./Tossug_Big_O slides_files/BFS_Distance.png" alt="Pseudo Code"></p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -78px; display: block;">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="implementation">Implementation</h2>
+</div>
+</div>
+</div></section><section class="future" hidden="" style="top: -163.5px; display: block;">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">BFS_Dist</span><span class="p">(</span><span class="n">graph</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s">"inf"</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="o">.</span><span class="n">keys</span><span class="p">())))</span>
+    <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">neibor</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="n">neibor</span><span class="p">]</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s">"inf"</span><span class="p">):</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">neibor</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">Q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">neibor</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">graph</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span><span class="p">:</span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span>
+    <span class="mi">1</span><span class="p">:</span><span class="nb">set</span><span class="p">([</span><span class="mi">0</span><span class="p">]),</span>
+    <span class="mi">2</span><span class="p">:</span><span class="nb">set</span><span class="p">([</span><span class="mi">4</span><span class="p">]),</span>
+    <span class="mi">3</span><span class="p">:</span><span class="nb">set</span><span class="p">([</span><span class="mi">4</span><span class="p">]),</span>
+    <span class="mi">4</span><span class="p">:</span><span class="nb">set</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">BFS_Dist</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+
+
+<div class="output_text output_subarea output_pyout">
+<pre>{0: 0, 1: 1, 2: 2, 3: 2, 4: 1}
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2086,10 +2258,107 @@ Wall time: 77.3 ms
 <ul>
 <li>Find the Big-O for BFS-Distance algorithm.</li>
 </ul>
-<p>It is too hard? Let&#39;s write some code and do some experiments.</p>
+<p>Find it too hard to estimate the <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-11-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-121" style="width: 2.119em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.734em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(2.183em 1000.003em 3.465em -0.51em); top: -3.074em; left: 0.003em;"><span class="mrow" id="MathJax-Span-122"><span class="texatom" id="MathJax-Span-123"><span class="mrow" id="MathJax-Span-124"><span class="mi" id="MathJax-Span-125" style="font-family: STIXNonUnicode-Italic;"></span></span></span><span class="mo" id="MathJax-Span-126" style="font-family: STIXGeneral-Regular;">(</span><span class="mo" id="MathJax-Span-127" style="font-family: STIXGeneral-Regular;">⋅</span><span class="mo" id="MathJax-Span-128" style="font-family: STIXGeneral-Regular;">)</span></span><span style="display: inline-block; width: 0px; height: 3.08em;"></span></span></span><span style="border-left-width: 0.004em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.158em; vertical-align: -0.304em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-11">\mathcal{O}(\cdot)</script> by hand? <br>
+Let's write some code and do some experiments.</p>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="some-helper-function">Some helper function</h2>
+</div>
+</div>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[10]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">def</span> <span class="nf">graph_gen</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="nb">set</span><span class="p">([]))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span> <span class="n">m</span><span class="p">)</span>
+    <span class="n">adj_matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    <span class="k">print</span> <span class="n">index</span>
+    <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">index</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">ind</span> <span class="o">/</span> <span class="n">n</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">ind</span> <span class="o">%</span> <span class="n">n</span>
+        <span class="n">adj_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">adj_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section><section class="future" hidden="" style="top: -20px; display: none;">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[11]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">graph</span> <span class="o">=</span> <span class="n">graph_gen</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span> 
+<span class="n">graph</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[21, 17, 74, 82, 7, 76, 31, 79, 12, 64, 32, 86, 37, 81, 36, 97, 28, 13, 58, 68]
+
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[11]:</div>
+
+
+<div class="output_text output_subarea output_pyout">
+<pre>{0: {7},
+ 1: {2, 3, 7},
+ 2: {1, 8},
+ 3: {1, 2, 6, 7},
+ 4: set(),
+ 5: {8},
+ 6: {4, 8},
+ 7: {4, 6, 9},
+ 8: {1, 2, 6},
+ 9: {7}}
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2099,12 +2368,12 @@ Wall time: 77.3 ms
 <h2 id="demo-experimental-way-to-find-the-big-o">Demo - Experimental Way to Find the Big-O</h2>
 </div>
 </div>
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[14]:
+In&nbsp;[12]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2121,8 +2390,7 @@ In&nbsp;[14]:
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-Populating the interactive namespace from numpy and matplotlib
+<pre>Populating the interactive namespace from numpy and matplotlib
 
 </pre>
 </div>
@@ -2130,9 +2398,8 @@ Populating the interactive namespace from numpy and matplotlib
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>
-WARNING: pylab import has clobbered these variables: [&apos;random&apos;]
-&#96;%matplotlib&#96; prevents importing * from pylab and numpy
+<pre>WARNING: pylab import has clobbered these variables: ['random']
+`%matplotlib` prevents importing * from pylab and numpy
 
 </pre>
 </div>
@@ -2146,7 +2413,7 @@ WARNING: pylab import has clobbered these variables: [&apos;random&apos;]
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[15]:
+In&nbsp;[13]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2163,7 +2430,7 @@ In&nbsp;[15]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[29]:
+In&nbsp;[14]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2176,12 +2443,12 @@ In&nbsp;[29]:
 </div>
 
 </div>
-    </div></section><section>
+    </div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[30]:
+In&nbsp;[15]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2198,7 +2465,7 @@ In&nbsp;[30]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[31]:
+In&nbsp;[16]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2214,12 +2481,11 @@ In&nbsp;[31]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[31]:</div>
+    Out[16]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
-<pre>
-[&lt;matplotlib.lines.Line2D at 0x10afecdd0&gt;]
+<pre>[&lt;matplotlib.lines.Line2D at 0x10628d950&gt;]
 </pre>
 </div>
 
@@ -2229,110 +2495,7 @@ In&nbsp;[31]:
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
+<img src="data:image/png;base64,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">
 </div>
 
 </div>
@@ -2341,12 +2504,12 @@ JEmSJEmSJEmSJEmSpMb8P/vqfNji6yb+AAAAAElFTkSuQmCC
 </div>
 
 </div>
-    </div></section><section>
+    </div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[32]:
+In&nbsp;[17]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2363,12 +2526,11 @@ In&nbsp;[32]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[32]:</div>
+    Out[17]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
-<pre>
-array([ 3.29966881,  5.48452819])
+<pre>array([ 3.29966881,  5.48452819])
 </pre>
 </div>
 
@@ -2377,12 +2539,12 @@ array([ 3.29966881,  5.48452819])
 </div>
 </div>
 
-</div></section><section>
+</div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[33]:
+In&nbsp;[18]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2399,7 +2561,7 @@ In&nbsp;[33]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[34]:
+In&nbsp;[19]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2415,12 +2577,11 @@ In&nbsp;[34]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[34]:</div>
+    Out[19]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
-<pre>
-[&lt;matplotlib.lines.Line2D at 0x10b68e410&gt;]
+<pre>[&lt;matplotlib.lines.Line2D at 0x106f99ad0&gt;]
 </pre>
 </div>
 
@@ -2430,86 +2591,7 @@ In&nbsp;[34]:
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
+<img src="data:image/png;base64,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">
 </div>
 
 </div>
@@ -2518,12 +2600,12 @@ JEmSJEmSJEmSJEkp+X+hGXQ5N/r3xAAAAABJRU5ErkJggg==
 </div>
 
 </div>
-    </div></section><section>
+    </div></section><section class="future" hidden="" style="top: -20px; display: none;">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[36]:
+In&nbsp;[20]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2540,12 +2622,11 @@ In&nbsp;[36]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[36]:</div>
+    Out[20]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
-<pre>
-array([ 5.99472445,  0.04405501])
+<pre>array([ 5.99472445,  0.04405501])
 </pre>
 </div>
 
@@ -2555,8 +2636,8 @@ array([ 5.99472445,  0.04405501])
 </div>
 
 </div></section>
-    </section><section>
-    <section>
+    </section><section class="stack future" style="top: 0px; display: block;" data-previous-indexv="0" hidden="">
+    <section class="" style="top: -183px; display: block;">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2573,11 +2654,11 @@ array([ 5.99472445,  0.04405501])
 </div></section>
     </section>
 </div>
-</div>
+<div class="backgrounds"><div class="slide-background past"><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div class="slide-background present"><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div class="slide-background future"><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div class="slide-background future"><div class="slide-background present"></div></div></div><div class="progress" style="display: block;"><span style="width: 396px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left enabled"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down enabled"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
 
-<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="./Tossug_Big_O slides_files/head.min.js"></script>
 
-<script src="reveal.js/js/reveal.js"></script>
+<script src="./Tossug_Big_O slides_files/reveal.js"></script>
 
 <script>
 
@@ -2597,13 +2678,13 @@ dependencies: [
 { src: "reveal.js/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
 ]
 });
-</script>
+</script><script type="text/javascript" src="./Tossug_Big_O slides_files/highlight.js"></script><script type="text/javascript" src="./Tossug_Big_O slides_files/notes.js"></script>
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="./Tossug_Big_O slides_files/MathJax.js"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
+    <script type="text/x-mathjax-config;executed=true">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -2629,6 +2710,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 });
 </script>
 
-</body>
 
-</html>
+
+
+<div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div></body></html>
